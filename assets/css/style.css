@@ -79,7 +79,7 @@ a{
     margin: 0;
 }
 
-.habilidades, .hobbies, .formacion, .proyectos{
+.habilidades, .hobbies, .formacion, .proyectos, .contacto{
     padding-top: 2rem;
     text-align: center;
 }
@@ -120,8 +120,68 @@ a{
     height: 200px;
 }
 
+.proyectos__enlace{
+    background-color: var(--color-de-fondo-secundario);
+    padding: 1rem;
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
+.proyectos__botones{
+    margin-bottom: 3rem;
+}
 
+.contacto{
+    padding: 2rem;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contacto__grupo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contacto__label{
+    display: block;
+}
+
+.contacto__campo{
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.contacto__boton{
+    width: 30%;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-de-fondo-menu);
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.contacto__image{
+    display: none;
+}
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
@@ -148,5 +208,21 @@ a{
     .formacion__elemento{
         width: 250px;
         height: 220px;
+    }
+
+    .contacto__formulario{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .contacto__fieldset{
+        width: 50%;
+    }
+
+    .contacto__image{
+        display: block;
+        width: 200px;
+        height: 200px;
     }
 }
